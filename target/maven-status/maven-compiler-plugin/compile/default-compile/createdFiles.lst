@@ -1,1 +1,4 @@
+com/idanch/config/WebConfig.class
 com/idanch/Main.class
+com/idanch/repositories/GameClassesDao.class
+com/idanch/repositories/JdbcGameClassesDao.class

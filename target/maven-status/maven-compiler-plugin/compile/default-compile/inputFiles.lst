@@ -1,1 +1,4 @@
+/home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/config/WebConfig.java
 /home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/Main.java
+/home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/repositories/GameClassesDao.java
+/home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/repositories/JdbcGameClassesDao.java
