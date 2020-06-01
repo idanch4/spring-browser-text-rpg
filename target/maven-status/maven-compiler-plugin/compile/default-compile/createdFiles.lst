@@ -1,4 +1,6 @@
-com/idanch/config/WebConfig.class
+com/idanch/representations/HeroClass.class
+com/idanch/representations/InitialAttributes.class
 com/idanch/Main.class
 com/idanch/repositories/GameClassesDao.class
 com/idanch/repositories/JdbcGameClassesDao.class
+com/idanch/config/WebConfig.class

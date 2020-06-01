@@ -2,3 +2,5 @@
 /home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/Main.java
 /home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/repositories/GameClassesDao.java
 /home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/repositories/JdbcGameClassesDao.java
+/home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/representations/InitialAttributes.java
+/home/idanch/IdeaProjects/BrowserRPG/src/main/java/com/idanch/representations/HeroClass.java

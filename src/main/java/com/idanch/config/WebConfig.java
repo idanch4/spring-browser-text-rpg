@@ -17,10 +17,12 @@ import javax.sql.DataSource;
 public class WebConfig {
     public static final Logger log = LoggerFactory.getLogger(WebConfig.class);
 
+    // Jdbc Properties
     private final String jdbcDriverClassName;
     private final String jdbcConnectionUrl;
     private final String jdbcDbUsername;
     private final String jdbcDbPassword;
+
 
     public WebConfig(@Value("${jdbc.driver_class_name}") String jdbcDriverClassName,
                      @Value("${jdbc.connection_url}") String jdbcConnectionUrl,
