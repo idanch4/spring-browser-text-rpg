@@ -1,6 +1,9 @@
+com/idanch/repositories/interfaces/GameClassesDao.class
 com/idanch/representations/HeroClass.class
 com/idanch/representations/InitialAttributes.class
 com/idanch/Main.class
-com/idanch/repositories/GameClassesDao.class
+com/idanch/config/DispatcherServletWebApplicationInitializer.class
+com/idanch/repositories/interfaces/InitialAttributesDao.class
 com/idanch/repositories/JdbcGameClassesDao.class
+com/idanch/repositories/JdbcInitialAttributesDao.class
 com/idanch/config/WebConfig.class

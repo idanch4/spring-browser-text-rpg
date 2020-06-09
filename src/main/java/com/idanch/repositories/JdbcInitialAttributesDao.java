@@ -14,6 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Repository("attr_dao")
+//TODO:: add support for sql exceptions
 public class JdbcInitialAttributesDao implements InitialAttributesDao {
     public static Logger log = LoggerFactory.getLogger(JdbcInitialAttributesDao.class);
 
