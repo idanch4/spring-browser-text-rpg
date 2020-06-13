@@ -4,7 +4,7 @@ import com.idanch.representations.HeroClass;
 
 import java.util.List;
 
-public interface GameClassesDao {
+public interface HeroClassesRepository {
     HeroClass getHeroClass(String name);
     List<HeroClass> getAllHeroClasses();
 }

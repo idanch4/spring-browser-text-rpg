@@ -1,9 +1,11 @@
-com/idanch/repositories/interfaces/GameClassesDao.class
+com/idanch/repositories/interfaces/InitialAttributesRepository.class
 com/idanch/representations/HeroClass.class
+com/idanch/repositories/JdbcHeroClassesRepository.class
+com/idanch/controllers/GameController.class
 com/idanch/representations/InitialAttributes.class
-com/idanch/Main.class
+com/idanch/services/interfaces/HeroClassesService.class
 com/idanch/config/DispatcherServletWebApplicationInitializer.class
-com/idanch/repositories/interfaces/InitialAttributesDao.class
-com/idanch/repositories/JdbcGameClassesDao.class
-com/idanch/repositories/JdbcInitialAttributesDao.class
+com/idanch/repositories/JdbcInitialAttributesRepository.class
 com/idanch/config/WebConfig.class
+com/idanch/services/HeroClassesServiceImpl.class
+com/idanch/repositories/interfaces/HeroClassesRepository.class

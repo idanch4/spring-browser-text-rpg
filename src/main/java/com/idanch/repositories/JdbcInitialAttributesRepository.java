@@ -1,6 +1,6 @@
 package com.idanch.repositories;
 
-import com.idanch.repositories.interfaces.InitialAttributesDao;
+import com.idanch.repositories.interfaces.InitialAttributesRepository;
 import com.idanch.representations.InitialAttributes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,8 +15,8 @@ import java.util.List;
 
 @Repository("attr_dao")
 //TODO:: add support for sql exceptions
-public class JdbcInitialAttributesDao implements InitialAttributesDao {
-    public static Logger log = LoggerFactory.getLogger(JdbcInitialAttributesDao.class);
+public class JdbcInitialAttributesRepository implements InitialAttributesRepository {
+    public static Logger log = LoggerFactory.getLogger(JdbcInitialAttributesRepository.class);
 
     private final JdbcTemplate jdbcTemplate;
 
@@ -38,7 +38,7 @@ public class JdbcInitialAttributesDao implements InitialAttributesDao {
             };
 
     @Autowired
-    public JdbcInitialAttributesDao(DataSource dataSource) {
+    public JdbcInitialAttributesRepository(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 

@@ -1,6 +1,6 @@
 package com.idanch.repositories;
 
-import com.idanch.repositories.interfaces.GameClassesDao;
+import com.idanch.repositories.interfaces.HeroClassesRepository;
 import com.idanch.representations.HeroClass;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,8 +14,8 @@ import java.util.Collections;
 import java.util.List;
 
 @Repository("hero_dao")
-public class JdbcGameClassesDao implements GameClassesDao {
-    public static Logger log = LoggerFactory.getLogger(JdbcGameClassesDao.class);
+public class JdbcHeroClassesRepository implements HeroClassesRepository {
+    public static Logger log = LoggerFactory.getLogger(JdbcHeroClassesRepository.class);
 
     private JdbcTemplate jdbcTemplate;
     private RowMapper<HeroClass> heroClassRowMapper = (resultSet, rowCount) -> {

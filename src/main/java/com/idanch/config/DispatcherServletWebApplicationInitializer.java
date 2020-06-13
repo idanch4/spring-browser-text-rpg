@@ -2,8 +2,8 @@ package com.idanch.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 import javax.servlet.ServletContext;
@@ -18,12 +18,14 @@ public class DispatcherServletWebApplicationInitializer implements WebApplicatio
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         // create application context
-        AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext();
+        AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
         appContext.register(WebConfig.class);
+
+        DispatcherServlet dispatcherServlet = new DispatcherServlet(appContext);
 
         // create and register the dispatcher servlet
         ServletRegistration.Dynamic registration =
-                servletContext.addServlet(DISPATCHER_SERVLET_NAME, new DispatcherServlet());
+                servletContext.addServlet(DISPATCHER_SERVLET_NAME, dispatcherServlet);
 
         // dispatcher servlet configuration
         registration.setLoadOnStartup(1);
