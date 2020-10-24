@@ -1,5 +1,6 @@
 # A Simple Browser-Text RPG 
-**IMPORTANT: Project is not finished - only contains some inital backend code & setup**
+**IMPORTANT: Project is not finished - only contains some inital backend code & setup.  
+The purpose of this project is to learn Spring Framework & Web applications and not to build a game.**
 
 ## How to Run:
 1. Execute: git clone https://github.com/idanch4/spring-browser-text-rpg.git
