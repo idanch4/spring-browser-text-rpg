@@ -19,7 +19,6 @@ public class JdbcHeroClassesRepository implements HeroClassesRepository {
 
     private JdbcTemplate jdbcTemplate;
     private RowMapper<HeroClass> heroClassRowMapper = (resultSet, rowCount) -> {
-        //TODO:: Get column names from a constants class
         String name = resultSet.getString("Name");
         String description = resultSet.getString("Description");
         return new HeroClass(name, description);

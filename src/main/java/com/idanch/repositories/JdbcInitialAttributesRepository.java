@@ -22,7 +22,6 @@ public class JdbcInitialAttributesRepository implements InitialAttributesReposit
 
     private final RowMapper<InitialAttributes> initialAttributesRowMapper =
             (resultSet, rowCount) -> {
-        //TODO:: Get column names from a constants class
                 String heroClassName = resultSet.getString("className");
                 int charisma = resultSet.getInt("charisma");
                 int integrity = resultSet.getInt("integrity");

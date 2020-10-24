@@ -11,7 +11,9 @@ public final class InitialAttributes {
     private Integer confidence;
     private Integer luck;
 
-    public InitialAttributes(String heroClassName, Integer charisma, Integer integrity, Integer confidence, Integer luck) {
+    // TODO: Consider a better way to construct objects of this class
+    public InitialAttributes(String heroClassName, Integer charisma,
+                             Integer integrity, Integer confidence, Integer luck) {
         this.heroClassName = heroClassName;
         this.charisma = charisma;
         this.integrity = integrity;
@@ -66,21 +68,12 @@ public final class InitialAttributes {
 
         InitialAttributes that = (InitialAttributes) o;
 
-        if (!heroClassName.equals(that.heroClassName)) return false;
-        if (charisma != null ? !charisma.equals(that.charisma) : that.charisma != null) return false;
-        if (integrity != null ? !integrity.equals(that.integrity) : that.integrity != null) return false;
-        if (confidence != null ? !confidence.equals(that.confidence) : that.confidence != null) return false;
-        return luck != null ? luck.equals(that.luck) : that.luck == null;
+        return heroClassName.equals(that.heroClassName);
     }
 
     @Override
     public int hashCode() {
-        int result = heroClassName.hashCode();
-        result = 31 * result + (charisma != null ? charisma.hashCode() : 0);
-        result = 31 * result + (integrity != null ? integrity.hashCode() : 0);
-        result = 31 * result + (confidence != null ? confidence.hashCode() : 0);
-        result = 31 * result + (luck != null ? luck.hashCode() : 0);
-        return result;
+        return heroClassName.hashCode();
     }
 
     @Override
