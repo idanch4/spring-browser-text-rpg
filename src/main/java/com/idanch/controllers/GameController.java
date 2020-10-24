@@ -26,7 +26,7 @@ public class GameController {
     public String getClasses(Model model) {
         log.info("Get request to /classes");
         List<HeroClass> heroClasses = heroClassesService.getAllHeroClasses();
-        model.addAttribute(heroClasses);
+        model.addAttribute("heroClassList", heroClasses);
         return "hero_classes";
     }
 }
